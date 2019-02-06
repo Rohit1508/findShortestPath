@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  #container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+  }
+  
+  .row {
+    display: inline-flex;
+    justify-content: center;
+    border: 1;
+    &:nth-child(2n) {
+      .col:nth-child(2n) {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+    &:nth-child(2n+1) {
+      .col:nth-child(2n+1) {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+    .col {
+      height: 60px;
+      width: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  
